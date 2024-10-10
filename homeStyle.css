@@ -1,0 +1,125 @@
+body{
+  background-color: rgb(123, 192, 209);
+}
+header{
+  background-color: rgb(255, 255, 255);
+ 
+  /* margin-top: -21px; */
+  padding: 3px;
+  text-align: center;
+  height: 130px;
+
+}
+header nav{
+  /* display: flex; */
+  justify-content: center;
+  gap: 5px;
+}
+header nav a{
+  
+  margin: 15px;
+  margin-top: 5px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, 0.3s;
+
+}
+header nav a:hover{
+background-color: #80adb8;
+text-shadow: #80adb8;
+}
+header h1{
+  color: #7c1073;
+  padding: 2px;
+  margin: auto;
+} 
+header p{
+color:#7c1073;
+padding: 1px;
+margin: 20px;
+}
+header nav a.active {
+  background-color: #4caf50;
+  color: #ffffff;
+  width: 100%;
+  
+
+}
+
+.menu-icon{
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width:768px){
+  nav{
+    flex-direction: column;
+    display: none;
+    justify-content: space-around;
+    background-color: #101c28;
+    position: absolute;
+    top: 50px;
+    width: 25%;
+    align-items: center;
+    padding: 0 20px;
+    left: 68%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .menu-icon{
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  nav.active{
+    display: flex;
+  }
+  nav a{
+    /* padding: 0;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 20%;
+    height: -10px;
+    text-align: center; */
+    margin-right: 300px;
+    flex: 1;
+    border: 1px solid transparent;
+  }
+}
+.container{
+  border: 3px solid #ccc;
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-left: 15%;
+  align-self: center;
+  align-content: center;
+  text-align: center;
+  height: 300px;
+  width: 70%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), -4px -4px 8px rgba(0, 0, 0, 0.5);
+
+}
+.container p{
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  color: #333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20;
+  line-height: 2;
+  text-align: center;
+  cursor: pointer;
+  
+}
+
+@media screen and (max-width:768px){
+  .container p{
+    font-size: 25px;
+  }
+}

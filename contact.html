@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="homeStyle.css">
+</head>
+<body>
+  <header>
+    <H1>  This is a Header</H1>
+    <p>Welcome to my project</p>
+  <span class="menu-icon" onclick="toggleMenu()">=</span>
+  <nav id="navMenu">
+    <a href="home.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html" class="active">Contact Us</a>
+    <a href="services.html">Services</a>
+  </nav>
+</header>
+<script>
+  function toggleMenu(){
+    const navMenu = document.getElementById('navMenu');
+    navMenu.classList.toggle('active');
+  }
+</script>
+<div class="container">
+ <h1> Do You want Us to build Your Site? Contact us.</h1>
+ <p> Via </p>
+ Email: Chichebenmesoma@gmail.com
+ Phone:+2349169357395
+ whatsapp:+2349169357395
+</div>
+</body>
+
+</html>
